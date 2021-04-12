@@ -18,6 +18,13 @@ body
 {
 	font-family: 'ralewayregular';
 }
+h2
+{
+	font-size:0.9em;
+	font-family:ralewaybold;
+}
+/*header*/
+
 header
 {
 	display:flex;
@@ -43,39 +50,49 @@ a:hover
 	border-top:2px #0065FC solid;
 	padding-top: 25px;
 
+}
+a
+{
+	text-decoration: none;
+	
 }	
 #sinscrire
 {
 	font-weight: bold;
 	color:#0065FC;
 }
-.local
+
+/*Première section avec champs de recherche et barre de filtres*/
+
+.iconelocal
 {
-	background-color: #f2f2f2;
-	padding:10px;
-	border-top-left-radius: : 10px;
-	border-bottom-left-radius: 10px;
+	background-color: #F2F2F2;
+	padding:15px;
+	height:auto;
+	text-align: center;
+	padding-top: 10px;
+	border-radius: 15px 0px 0px 15px;
+	
 }
-#recherche{
+#recherche
+{
 	padding:10px;
 	border:none;
 	font-weight: bold;
 }
 #bouton
 {
-	padding:10px;
+	
 	background-color: #0065FC;
-	border-top-right-radius: 10px;
-	border-bottom-right-radius: 20px
 	border:#0065FC;
 	color:white;
 	font-weight: bold;
+	padding:15px;
+	height:auto;
+	text-align: center;
+	border-radius: 0px 15px 15px 0px;
 }
-h2
-{
-	font-size:0.9em;
-	font-family:ralewaybold;
-}
+
 #filtre
 {
 	margin-top:25px;
@@ -91,6 +108,10 @@ h2
 	padding-right:15px;
 	
 }
+.categorie:hover
+{
+	background-color:#f2f2f2;
+}
 .tri
 {
 	color:#0065FC;
@@ -99,3 +120,17 @@ h2
 	border-radius: 20px;
 	margin-right:10px;
 }
+#information
+{
+	display:flex;
+}
+.iconeinfo
+{
+	color:#0065FC;
+	border: 2px #F2F2F2 solid;
+	padding:15px;
+	border-radius: 200px;
+	margin-right:10px;
+	font-size:0.8em;
+}
+
