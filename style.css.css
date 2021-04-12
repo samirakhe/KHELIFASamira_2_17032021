@@ -30,8 +30,13 @@
 body
 {
 	font-family: 'ralewayregular';
+	
 }
-h1,h2,h3
+#bloc_page
+{
+	margin:20px;
+}
+h1,h2,h3, .nomhotel
 {
 	font-family:Raleway-ExtraBold;
 	
@@ -70,6 +75,7 @@ ul li
 a
 {
 	text-decoration: none;
+	color:black;
 	
 }	
 #sinscrire
@@ -135,19 +141,27 @@ a
 	padding:15px;
 	border-radius: 20px;
 	margin-right:10px;
+	width:20px;
+	height:16px;
+	text-align: center;
 }
 #information
 {
 	display:flex;
+	
 }
 .iconeinfo
 {
-	color:#0065FC;
+	color:white;
 	border: 2px #F2F2F2 solid;
-	padding:15px;
-	border-radius: 200px;
-	margin-right:10px;
-	font-size:0.8em;
+	border-radius:200px;
+	padding:1px;
+	margin-top:auto;
+	margin-bottom: auto;
+	font-size:1.5em;
+	background-color:#0065FC;
+	margin-right: 10px;
+	vertical-align: middle;
 }
 /* Deuxième section affichant le résultat de la recherche*/
 
@@ -155,7 +169,9 @@ a
 {
 	background-color:#f2f2f2;
 	border-radius:10px;
-	width:65%;
+	width:75%;
+	position: relative;
+	
 }
 h3
 {
@@ -165,22 +181,46 @@ h3
 }
 #hebergement
 {
-	display:flex;
-	flex-wrap:wrap;
-
+	display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  
 }
-.premiereligne
+.premiereligne , .deuxiemeligne
+{
+	display:flex;
+	justify-content:space-around;
+	margin:15px;
+
+}	
+
+.imagehotel
+{
+	width:287px;
+	height:191px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.resultathotel
+{
+	margin:10px;
+	background-color: white;
+	padding:7px;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+}
+.infohotel
 {
 	
+	margin-left:10px;
+	margin-bottom: 10px;
 }
-#auberge_la_cannebiere
+.blue
 {
-	background-color:white;
+	color:#0065FC;
 }
-.imageaubergelacannebiere
+.grey
 {
-	object-fit:contain;
-	width:250px;
-	height:auto;
+	color:#f2f2f2;
 }
-
