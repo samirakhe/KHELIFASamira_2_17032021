@@ -313,7 +313,7 @@ aside
 }
 
 /**Troisième section activités à Marseille**/
-.all_activity
+#all_activity
 {
 	display:flex;
 	justify-content: space-between;
