@@ -37,7 +37,7 @@ body
 {
 	margin:20px;
 }
-h1,h2,h3, .nomhotel, h4
+h1,h2,h3, .nomhotel, h4, h5
 {
 	font-family:Raleway-ExtraBold;
 	
@@ -93,6 +93,10 @@ a
 {
 	text-decoration: none;
 	color:black;
+}
+a:hover
+{
+	color:#0065FC;
 }
 
 /*Première section avec champs de recherche et barre de filtres*/
@@ -221,8 +225,8 @@ span
 
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
-	width:265px;
-	height: 113px;
+	width:100%;
+	height:113px;
 	position: relative;
 	object-fit: cover;	
 }
@@ -234,8 +238,8 @@ span
 	border-radius: 15px;
 	display: flex;
 	flex-direction: column;
-	width:265px;
-	height: 225px;
+	width:30%;
+	height: auto;
 	box-shadow: 0px 0px 12px 2px #00000045;
 }
 .infohotel
@@ -265,6 +269,7 @@ aside
 	background-color:#f2f2f2;
 	border-radius:10px;
 	position: relative;
+
 }
 #asidehead
 {
@@ -281,8 +286,8 @@ aside
 
 .resultataside
 {
-	width: 340px;
-	height: 140px;
+	width: 90%;
+	height: auto;
 	background-color: white;
 	margin-right: 10px;
 	margin-left: 10px;
@@ -329,23 +334,25 @@ aside
 	border-radius: 15px;
 	display: flex;
 	flex-direction: column;
-	width:303px;
+	width:23%;
 	height: auto;
 	box-shadow: 0px 0px 12px 2px #00000045;
 }
 
 .image_vieux_port
 {
-	width: 303px;
+	width: 100%;
 	height: 386px;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;	
+	object-fit: cover;
 }
 #pomegues_frioul, #notredame_longchamp /**colonne avec les deux offres verticales**/
 {
 	display:flex;
 	flex-direction: column;
 	align-items: center;
+	width: 23%;
 
 }
 #pomegues 
@@ -355,7 +362,7 @@ aside
 	border-radius: 15px;
 	display: flex;
 	flex-direction: column;
-	width:306px;
+	width:100%;
 	height: auto;
 	box-shadow: 0px 0px 12px 2px #00000045;
 }
@@ -364,7 +371,7 @@ aside
 {
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
-	width:306px;
+	width:100%;
 	height: 170px;
 	object-fit: cover;
 	align-items: center;
@@ -376,13 +383,13 @@ aside
 	background-color: white;
 	border-radius: 15px;
 	box-shadow: 0px 0px 12px 2px #00000045;
-	width: 306px;
+	width: 100%;
 	height: auto;
 	margin-top:auto;
 }
 .image_frioul 
 {
-	width: 307px;
+	width: 100%;
 	height: 109px;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
@@ -394,16 +401,17 @@ aside
 	border-radius: 15px;
 	display: flex;
 	flex-direction: column;
-	width:303px;
+	width:23%;
 	height: auto;
 	box-shadow: 0px 0px 12px 2px #00000045;
 }
 .image_calanques
 {
-	width: 303px;
+	width: 100%;
 	height: 386px;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
+	object-fit: cover;
 }
 #notredame
 {
@@ -412,13 +420,13 @@ aside
 	border-radius: 15px;
 	display: flex;
 	flex-direction: column;
-	width:305px;
+	width:100%;
 	height: auto;
 	box-shadow: 0px 0px 12px 2px #00000045;
 }
 .image_notredame
 {
-	width: 305px;
+	width: 100%;
 	height: 135px;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
@@ -429,14 +437,14 @@ aside
 	border-radius: 15px;
 	display: flex;
 	flex-direction: column;
-	width:305px;
+	width:100%;
 	height: auto;
 	box-shadow: 0px 0px 12px 2px #00000045;
 	margin-top:auto;
 }
 .image_longchamp
 {
-	width: 305px;
+	width: 100%;
 	height: 153px;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
@@ -454,22 +462,21 @@ footer
 	display: flex;
 	background-color: #f2f2f2;
 	justify-content: space-between;
-	align-items: center;
 	margin-top:45px;
+	padding:10px;
 }
-
+h5
+{
+	font-size: 1em;
+}
 ul
 {
 	list-style-type: none;
+
 }
 li
 {
 	margin:10px;
 }
 
-.bloc_footer
-{
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-}
+
