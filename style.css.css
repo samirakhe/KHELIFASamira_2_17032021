@@ -1,4 +1,5 @@
-@font-face {
+@font-face 
+{
     font-family: 'ralewayregular';
     src: url('raleway-regular.woff2') format('woff2'),
          url('raleway-regular.woff') format('woff');
@@ -41,12 +42,12 @@ h1,h2,h3, .nomhotel, h4
 	font-family:Raleway-ExtraBold;
 	
 }
-
 h2
 {
 	font-size:0.9em;
 	
 }
+
 /*header*/
 
 header
@@ -54,7 +55,11 @@ header
 	display:flex;
 	justify-content: space-between;
 }
-nav a:hover
+#menu_general
+{
+	text-decoration: none;
+}
+.menu a:hover
 {
 	color:#0065FC;
 	border-top:2px #0065FC solid;
@@ -72,21 +77,27 @@ ul li
 	padding-right:18px;
 	padding-left:18px;
 }
-a
+.menu a
 {
 	text-decoration: none;
 	color:black;
 	
 }	
-#sinscrire
+#sinscrire a
 {
 	font-weight: bold;
 	color:#0065FC;
+	text-decoration: none;
+}
+a
+{
+	text-decoration: none;
+	color:black;
 }
 
 /*Première section avec champs de recherche et barre de filtres*/
 
-.iconelocal
+.iconelocalisation
 {
 	background-color: #F2F2F2;
 	padding:15px;
@@ -114,7 +125,6 @@ a
 	text-align: center;
 	border-radius: 0px 15px 15px 0px;
 }
-
 #filtre
 {
 	margin-top:25px;
@@ -134,7 +144,7 @@ a
 {
 	background-color:#f2f2f2;
 }
-.tri
+.icone_categorie
 {
 	color:#0065FC;
 	background-color: #DEEBFF;
@@ -153,7 +163,7 @@ a
 	margin-bottom: 25px;
 	
 }
-.iconeinfo
+.icone_information
 {
 	display: flex;
 	justify-content: center;
@@ -169,7 +179,8 @@ a
 }
 
 /* Deuxième section affichant le résultat de la recherche*/
-#resultats
+
+#resultats_de_la_recherche
 {
 	display:flex;
 	justify-content: space-between;
@@ -188,22 +199,23 @@ h3
 	margin-top:35px;
 	margin-left:40px;
 }
-#hebergement
+span
+{
+	font-weight: bold;
+}
+#hebergement_card
 {
 	display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
   
 }
-.premiereligne , .deuxiemeligne /*hebergement*/
+.premiereligne , .deuxiemeligne /*hebergement card*/
 {
 	display:flex;
 	justify-content:space-around;
 	margin:15px;
-
-
 }	
-
 .imagehotel
 {
 
@@ -212,11 +224,8 @@ h3
 	width:265px;
 	height: 113px;
 	position: relative;
-	object-fit: cover;
-	
-	
+	object-fit: cover;	
 }
-
 .resultathotel
 {
 	margin:10px;
@@ -225,19 +234,13 @@ h3
 	border-radius: 15px;
 	display: flex;
 	flex-direction: column;
-	
 	width:265px;
-	height: 215px;
+	height: 225px;
 	box-shadow: 0px 0px 12px 2px #00000045;
-	
-
 }
 .infohotel
 {
 	margin-left:10px;
-	margin-bottom: 30px;
-	vertical-align: middle;
-
 }
 .blue
 {
@@ -254,11 +257,13 @@ h4
 	padding-top: 10px
 	font-size:1.2em;
 }
+
+/*Section de droite*/
+
 aside
 {
 	background-color:#f2f2f2;
 	border-radius:10px;
-	
 	position: relative;
 }
 #asidehead
@@ -270,10 +275,10 @@ aside
 .icone_chart
 {
 	font-size: 1.5em;
-	justify-content: center;
 	margin-right:10px;
-
+	align-items: center;
 }
+
 .resultataside
 {
 	width: 340px;
@@ -292,7 +297,7 @@ aside
 	box-shadow: 0px 0px 12px 2px #00000045;
 	
 }
-.image_info
+.image_info /*regroupe imageaside et infohotelaside*/
 {
 	display:flex;
 	justify-content: start;
@@ -303,16 +308,15 @@ aside
 	height: 140px;
 	border-top-left-radius: 10px;
 	border-bottom-left-radius: 10px;
-	
-	object-fit: cover;
-	
+	object-fit: cover;	
 }
 .infohotelaside
 {
 	margin-left:10px;
 }
 
-/**Troisième section activités à Marseille**/
+
+/*Troisième section activités à Marseille*/
 #all_activity
 {
 	display:flex;
@@ -321,7 +325,6 @@ aside
 }
 #vieux_port 
 {
-	margin:10px;
 	background-color: white;
 	border-radius: 15px;
 	display: flex;
@@ -338,18 +341,16 @@ aside
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;	
 }
-#pomegues_frioul 
+#pomegues_frioul, #notredame_longchamp /**colonne avec les deux offres verticales**/
 {
 	display:flex;
 	flex-direction: column;
 	align-items: center;
-	margin-bottom: 15px;
 
 }
 #pomegues 
 {
-	
-	margin:10px;
+	margin-bottom: auto;
 	background-color: white;
 	border-radius: 15px;
 	display: flex;
@@ -375,12 +376,13 @@ aside
 	background-color: white;
 	border-radius: 15px;
 	box-shadow: 0px 0px 12px 2px #00000045;
-	width: 301px;
+	width: 306px;
 	height: auto;
+	margin-top:auto;
 }
 .image_frioul 
 {
-	width: 301px;
+	width: 307px;
 	height: 109px;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
@@ -388,7 +390,6 @@ aside
 }
 #calanques
 {
-	margin:10px;
 	background-color: white;
 	border-radius: 15px;
 	display: flex;
@@ -404,17 +405,9 @@ aside
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
 }
-#notredame_longchamp
-{
-	display:flex;
-	flex-direction: column;
-	align-items: center;
-	margin-bottom: 15px;
-
-}
 #notredame
 {
-	margin:10px;
+	margin-bottom: auto;
 	background-color: white;
 	border-radius: 15px;
 	display: flex;
@@ -432,7 +425,6 @@ aside
 }
 #longchamp
 {
-	margin:10px;
 	background-color: white;
 	border-radius: 15px;
 	display: flex;
@@ -440,6 +432,7 @@ aside
 	width:305px;
 	height: auto;
 	box-shadow: 0px 0px 12px 2px #00000045;
+	margin-top:auto;
 }
 .image_longchamp
 {
@@ -462,10 +455,10 @@ footer
 	background-color: #f2f2f2;
 	justify-content: space-between;
 	align-items: center;
-	margin-top:25px;
+	margin-top:45px;
 }
 
-ul li
+ul
 {
 	list-style-type: none;
 }
@@ -479,5 +472,4 @@ li
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-
 }
