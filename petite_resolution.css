@@ -1,0 +1,17 @@
+#bloc_page
+{
+	width:768px;
+	
+
+}
+#resultats_de_la_recherche
+{
+	display:flex;
+	flex-direction: column;
+	width:100%;
+}
+#hebergement_card
+{
+	width: 100%;
+}
+
