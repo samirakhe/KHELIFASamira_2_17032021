@@ -194,17 +194,18 @@ a:hover
 {
 	display:flex;
 	justify-content: space-between;
+
 }
 #hebergementresult
 {
 	background-color:#f2f2f2;
 	border-radius:10px;
 	width:63%;
+	height: 100%;
 	padding-top:35px;
 	padding-left: 40px;
 	padding-right:40px;
-	
-	
+		
 }
 h3
 {
@@ -218,16 +219,17 @@ span
 #hebergement_card
 {
 	display: flex;
-    /*justify-content: space-around;*/
+    justify-content: space-between ;
     flex-direction: column;
     width: 100%;
-
-  
+    height:90%; 
 }
 .premiereligne , .deuxiemeligne /*hebergement card*/
 {
 	display:flex;
-	/*justify-content:space-around;*/
+	justify-content:space-between;
+	height:100%;
+	padding-bottom: 2%;
 	
 }	
 .imagehotel
@@ -237,25 +239,23 @@ span
 	border-top-right-radius: 10px;
 	width:100%;
 	height:113px;
-	position: relative;
+	
 	object-fit: cover;	
 }
 .resultathotel
 {
-	margin:10px;
 	background-color: white;
 	padding:7px;
 	border-radius: 15px;
 	display: flex;
 	flex-direction: column;
 	width:30%;
-	height: auto;
+	height:50% ;
 	box-shadow: 0px 0px 12px 2px #00000045;
 }
 .infohotel
 {
-	margin-left:10px;
-}
+	}
 .blue
 {
 	color:#0065FC;
@@ -266,7 +266,7 @@ span
 }
 h4
 {
-	margin-left:40px;
+	
 	padding-bottom: 10px;
 	padding-top: 10px
 	font-size:1.2em;
@@ -280,7 +280,7 @@ aside
 	border-radius:10px;
 	padding-top:35px;
 	padding-left: 10px;
-	padding-right:10px;
+	padding-right: 10px; 
 	width: 28%;
 
 
@@ -294,25 +294,24 @@ aside
 .icone_chart
 {
 	font-size: 1.5em;
-	margin-right:10px;
 	align-items: center;
 }
-
+.colonneaside
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
 .resultataside
 {
 	width: 90%;
 	height: 30%;
 	background-color: white;
-	margin-right: 10px;
-	margin-left: 10px;
-	margin-bottom:50px;
-	margin-top: 20px;
-	background-color: white;
 	padding:7px;
 	border-radius: 15px;
 	display: flex;
 	flex-direction: column;
-	
+	justify-content: stretch;
 	box-shadow: 0px 0px 12px 2px #00000045;
 	
 }
@@ -320,6 +319,7 @@ aside
 {
 	display:flex;
 	justify-content: start;
+	height: 100%;
 }
 .imageaside
 {
@@ -340,7 +340,7 @@ aside
 {
 	display:flex;
 	justify-content: space-between;
-	margin:auto;
+	
 }
 #vieux_port 
 {
@@ -399,7 +399,7 @@ aside
 	box-shadow: 0px 0px 12px 2px #00000045;
 	width: 100%;
 	height: auto;
-	margin-top:auto;
+
 }
 .image_frioul 
 {
@@ -429,7 +429,7 @@ aside
 }
 #notredame
 {
-	margin-bottom: auto;
+	
 	background-color: white;
 	border-radius: 15px;
 	display: flex;
