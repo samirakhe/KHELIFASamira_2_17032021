@@ -1,17 +1,9 @@
-#bloc_page
+h1
 {
-	width:768px;
-	
-
+	color: blue;
 }
-#resultats_de_la_recherche
-{
-	display:flex;
-	flex-direction: column;
-	width:100%;
-}
-#hebergement_card
+.barre_recherche
 {
 	width: 100%;
+	align-items: center;
 }
-
