@@ -55,7 +55,6 @@ header
 {
 	display:flex;
 	justify-content: space-between;
-	flex-wrap: wrap;
 }
 #menu_general
 {
@@ -91,6 +90,11 @@ header ul li
 	color:#0065FC;
 	text-decoration: none;
 }
+#sinscrire a:hover
+{
+	border-top:2px #0065FC solid;
+	padding-top: 45px;
+}
 a
 {
 	text-decoration: none;
@@ -101,8 +105,12 @@ a:hover
 	color:#0065FC;
 }
 
-/*Première section avec champs de recherche et barre de filtres*/
 
+/*Première section avec champs de recherche et barre de filtres*/
+.barre_recherche
+{
+	display: flex;
+}
 .iconelocalisation
 {
 	background-color: #F2F2F2;
@@ -134,6 +142,11 @@ a:hover
 	cursor: pointer;
 
 }
+.loupe
+{
+	display: none;
+}
+
 #filtre
 {
 	margin-top:25px;
