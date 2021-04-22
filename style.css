@@ -74,7 +74,7 @@ nav ul
 	padding-top:15px;
 
 }
-ul li
+header ul li 
 {
 	padding-right:18px;
 	padding-left:18px;
@@ -498,19 +498,21 @@ aside
 
 footer
 {
-	display: flex;
 	background-color: #f2f2f2;
-	justify-content: space-between;
 	margin-top:45px;
-	padding:10px;
+	display: flex;
+	justify-content:flex-start;
 }
+
 h5
 {
 	font-size: 1em;
 }
-ul
+footer ul 
 {
+
 	list-style-type: none;
+	margin-right:135px;
 
 }
 li
