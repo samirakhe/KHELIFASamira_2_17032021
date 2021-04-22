@@ -1,9 +1,114 @@
-h1
+#bloc_page
 {
-	color: blue;
+	max-width: 768px;
+	width: 100%;
+	margin:0px;
+	
 }
-.barre_recherche
+header
 {
 	width: 100%;
+}
+#filtres
+{
+	width:100%;
+}
+footer
+{
+	display: flex;
+	flex-direction: column;
+	background-color: #f2f2f2;
+	
+	
+	padding:10px;
+}
+#all_activity
+{
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+	
+	
+}
+.premiereligne , .deuxiemeligne /*hebergement card*/
+{
+	display:flex;
+	flex-direction: column;
+	justify-content:space-between;
+	height:100%;
+	padding-bottom: 10px;
+	
+}
+#resultats_de_la_recherche
+{
+	
+	display:flex;
+	
+	justify-content: space-between;
+	flex-wrap: wrap-reverse;
+}	
+#hebergementresult
+{
+	width:100%;
+	height: 100%;
+	padding-top:35px;
+			
+}
+aside
+{
+
+	
+	padding-top:35px;
+	padding-left: 0px;
+	padding-right: 0px; 
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding-bottom: 33px;
+}
+.colonneaside
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 90%;
+	width: 86%;
 	align-items: center;
+
+}
+.resultataside
+{
+	width: 100%;
+	height: 27%;
+	background-color: white;
+	padding:7px;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: stretch;
+	box-shadow: 0px 0px 12px 2px #00000045;
+	
+}
+.image_info /*regroupe imageaside et infohotelaside*/
+{
+	display:flex;
+	justify-content: start;
+	height: 100%;
+}
+.imageaside
+{
+	width: 130px;
+	height: 100%;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	object-fit: cover;
+
+}
+.infohotelaside
+{
+	margin-left:10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
