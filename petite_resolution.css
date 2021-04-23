@@ -9,10 +9,23 @@ header
 	flex-wrap: wrap;
 
 }
-.menu
+
+nav
 {
-	position: relative;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	border-bottom: 3px solid #F2F2F2;
 }
+.menu a:hover
+{
+	color:#0065FC;
+	border-bottom:2px #0065FC solid;
+	width: 100%;
+	border-top:0px;
+	padding-bottom: 26px;
+}
+
 #sinscrire
 {
 	position: absolute;
@@ -37,6 +50,11 @@ header
 	outline: none;
 	cursor: pointer;
 }
+.barre_recherche
+{
+	display: flex;
+	align-items: center;
+}
 #bouton
 {
 	display: none;
@@ -51,6 +69,7 @@ header
 	justify-content: space-between;
 	flex-wrap: wrap-reverse;
 }
+
 aside
 {
 	padding-top:35px;
@@ -113,6 +132,7 @@ aside
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+
 }
 .resultathotel
 {
@@ -126,6 +146,12 @@ aside
 	justify-content:space-between;
 	height:100%;
 	padding-bottom: 10px;
+}
+h4
+{
+	padding-bottom: 10px;
+	padding-top: 0px;
+	font-size:0.9em;
 }
 
 
@@ -156,10 +182,14 @@ footer
 {
 	display: flex;
 	flex-direction: column;
+	justify-content: flex-start;
 	background-color: #f2f2f2;
 	padding:10px;
 }
-
+footer ul
+{
+	padding-left: 0px;
+}
 	
 
 
