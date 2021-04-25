@@ -9,37 +9,61 @@ header
 	flex-wrap: wrap;
 
 }
+header ul li 
+{
+	padding:0px;
+}
 
 nav
 {
-	display: flex;
-	justify-content: space-between;
+
 	width: 100%;
-	border-bottom: 3px solid #F2F2F2;
+	
 }
 nav ul
 {
-	display:flex;
-	justify-content: space-between;
 	list-style-type: none;
 	padding-top:0px;
-
+	width: 100%;
 }
+
+
 #menu_general
 {
 	text-decoration: none;
 	width: 100%;
 	padding-left: 0px;
-}
+	display: flex;
 
+}
+#filtres h2
+{
+	width: 100%;
+}
+ul li.menu
+{
+	border-bottom:2px #f2f2f2 solid;
+	padding-bottom: 10px;
+	width: 100%
+}
+li.menu:hover
+{
+	border-bottom:2px #0065FC solid;
+}
+.menu
+{
+	width: 50%;
+	text-align: center;
+}
 .menu a:hover
 {
 	color:#0065FC;
-	border-bottom:2px #0065FC solid;
+	
 	width: 100%;
 	border-top:0px;
-	padding-bottom: 26px;
+	
 }
+
 
 #sinscrire
 {
@@ -82,7 +106,7 @@ nav ul
 .categorie
 {
 	display:flex;
-	margin-right: 18px;
+	margin-right: 0px;
 	margin-left: 18px;
 	margin-bottom: 10px;
 	border:2px #f2f2f2 solid;
@@ -90,6 +114,16 @@ nav ul
 	padding-right:15px;
 	cursor: pointer;
 	
+}
+#information
+{
+	
+	align-items: flex-start;
+}
+
+#information p
+{
+	margin-top:3px;
 }
 #resultats_de_la_recherche
 {
@@ -178,6 +212,15 @@ aside
 {
 	width: 100%;
 	margin-bottom:10px;
+	padding:0px;
+    box-shadow: 0px 0px 12px 2px #00000021;
+}
+
+.resultathotel .card
+{
+	display:inline-block;
+	height:100%;
+	padding:7px;
 }
 .premiereligne , .deuxiemeligne /*hebergement card*/
 {
@@ -191,21 +234,24 @@ h4
 {
 	padding-bottom: 10px;
 	padding-top: 0px;
-	font-size:0.9em;
+	font-size:1.2em;
 }
 
 /*Troisième section activités à Marseille*/
-
+.activites_a_marseille
+{
+	width: 95%;
+}
 #all_activity
 {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	align-items: center;
 }
+
 #vieux_port, #pomegues_frioul, #notredame_longchamp, #calanques
 {
-	width:80%;
+	width:100%;
 	margin-bottom: 10px;
 }
 #pomegues, #frioul, #notredame, #longchamp
@@ -214,7 +260,7 @@ h4
 }
 .image_vieux_port, .image_pomegues, .image_frioul, .image_calanques, .image_notredame, .image_longchamp
 {
-	height: 170px;
+	height: 115px;
 	
 }
 footer
@@ -228,6 +274,7 @@ footer
 footer ul
 {
 	padding-left: 0px;
+	width: 100%;
 }
 	
 
