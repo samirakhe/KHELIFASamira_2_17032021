@@ -35,8 +35,8 @@ body
 }
 #bloc_page
 {
-	
-	margin:20px;
+	max-width: 1440px;
+	margin:auto;
 }
 h1,h2,h3, .nomhotel, h4, h5
 {
@@ -383,6 +383,7 @@ aside
 	justify-content: space-between;
 	width: 100%;
 	flex-wrap: wrap;
+	margin:auto;
 }
 #vieux_port 
 {
