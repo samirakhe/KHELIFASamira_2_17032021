@@ -50,6 +50,7 @@ li.menu:hover
 {
 	width: 50%;
 	text-align: center;
+	margin:auto;
 }
 .menu a:hover
 {
