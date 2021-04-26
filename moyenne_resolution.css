@@ -1,6 +1,6 @@
 #bloc_page
 {
-	max-width: 768px;
+	max-width: 1216px;
 	width: 100%;
 	margin:0px;	
 }
@@ -85,7 +85,7 @@ li.menu:hover
 .barre_recherche
 {
 	display: flex;
-	justify-content: space-around;
+	justify-content: flex-start;
 	align-items: center;
 }
 #bouton
@@ -177,7 +177,6 @@ aside
 	flex-direction: column;
 	justify-content: space-between;
 }
-
 /* Deuxième section avev hebergement à marseille*/	
 
 #hebergementresult
@@ -195,7 +194,7 @@ aside
 {
 	display: flex;
     justify-content: center; 
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
     height:90%; 
 }
@@ -219,7 +218,9 @@ aside
 	flex-direction: column;
 	justify-content:space-between;
 	height:100%;
+	width: 45%;
 	padding-bottom: 10px;
+	margin:auto;
 }
 h4
 {
@@ -227,48 +228,42 @@ h4
 	padding-top: 0px;
 	font-size:1.2em;
 }
-
 /*Troisième section activités à Marseille*/
-.activites_a_marseille
+
+#vieux_port 
 {
-	width: 95%;
-	margin:auto;
-}
-#all_activity
-{
+	background-color: white;
+	border-radius: 15px;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
-	flex-wrap: wrap;
+	width:49%;
+	height: auto;
+	box-shadow: 0px 0px 12px 2px #00000045;
+	margin-bottom: 30px;
 }
 
-#vieux_port, #pomegues_frioul, #notredame_longchamp, #calanques
+
+
+#pomegues_frioul, #notredame_longchamp /**colonne avec les deux offres verticales**/
 {
-	width:100%;
-	margin-bottom: 10px;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	width: 49%;
+	margin-bottom: 30px;
+
+
 }
-#pomegues, #frioul, #notredame, #longchamp
+
+#calanques
 {
-	margin-bottom: 10px;
-}
-.image_vieux_port, .image_pomegues, .image_frioul, .image_calanques, .image_notredame, .image_longchamp
-{
-	height: 115px;
-	
-}
-footer
-{
+	background-color: white;
+	border-radius: 15px;
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
-	background-color: #f2f2f2;
-	padding:10px;
-}
-footer ul
-{
-	padding-left: 0px;
-	width: 100%;
-}
-	
+	width:49%;
+	height: auto;
+	box-shadow: 0px 0px 12px 2px #00000045;
 
+}
 

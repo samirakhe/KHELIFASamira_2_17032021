@@ -375,12 +375,14 @@ aside
 
 
 /*Troisième section activités à Marseille*/
-#all_activity
-{
+
+
+#all_activity{
+
 	display:flex;
 	justify-content: space-between;
 	width: 100%;
-	
+	flex-wrap: wrap;
 }
 #vieux_port 
 {
@@ -484,6 +486,7 @@ aside
 	height: 135px;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
+	object-fit: cover;
 }
 #longchamp
 {
@@ -502,6 +505,7 @@ aside
 	height: 153px;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
+	object-fit: cover;
 }
 .nom_activites
 {
