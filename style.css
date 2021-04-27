@@ -107,6 +107,7 @@ a:hover
 
 
 /*Première section avec champs de recherche et barre de filtres*/
+
 .barre_recherche
 {
 	display: flex;
@@ -141,7 +142,6 @@ a:hover
 	border-radius: 0px 15px 15px 0px;
 	outline: none;
 	cursor: pointer;
-
 }
 .loupe
 {
@@ -153,8 +153,6 @@ a:hover
 	margin-top:25px;
 	display:flex;
 	flex-wrap: wrap;
-
-
 }
 .categorie
 {
@@ -164,8 +162,7 @@ a:hover
 	border:2px #f2f2f2 solid;
 	border-radius:25px;
 	padding-right:15px;
-	cursor: pointer;
-	
+	cursor: pointer;	
 }
 .categorie:hover
 {
@@ -188,8 +185,7 @@ a:hover
 	display:flex;
 	align-items: center;
 	margin-top:15px;
-	margin-bottom: 25px;
-	
+	margin-bottom: 25px;	
 }
 .icone_information
 {
@@ -207,19 +203,20 @@ a:hover
 }
 
 /* Deuxième section affichant le résultat de la recherche*/
-.card
-{
-	display:inline-block;
-	height:100%;
-}
+
+
 #resultats_de_la_recherche
 {
 	display:flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-
 }
-#hebergementresult
+.card
+{
+	display:inline-block;
+	height:100%;
+}
+#hebergementresult /*Hebergement à Marseille*/
 {
 	background-color:#f2f2f2;
 	border-radius:10px;
@@ -239,7 +236,7 @@ span
 {
 	font-weight: bold;
 }
-#hebergement_card
+#hebergement_card /* Regroupe les 6 offres*/
 {
 	display: flex;
     justify-content: space-between ;
@@ -252,17 +249,14 @@ span
 	display:flex;
 	justify-content:space-between;
 	height:100%;
-	padding-bottom: 10px;
-	
+	padding-bottom: 10px;	
 }	
 .imagehotel
 {
-
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
 	width:100%;
 	height:113px;
-	
 	object-fit: cover;	
 }
 .resultathotel
@@ -277,11 +271,11 @@ span
 	box-shadow: 0px 0px 12px 2px #00000045;
 }
 
-.blue
+.blue /* étoiles*/
 {
 	color:#0065FC;
 }
-.grey
+.grey /* étoiles*/
 {
 	color:#f2f2f2;
 }
@@ -307,8 +301,6 @@ aside
 	justify-content: space-between;
 	padding-bottom: 33px;
 	align-items: center;
-
-
 }
 #asidehead
 {
@@ -330,7 +322,6 @@ aside
 	height: 90%;
 	width: 86%;
 	align-items: center;
-
 }
 .resultataside
 {
@@ -341,9 +332,7 @@ aside
 	border-radius: 15px;
 	display: flex;
 	flex-direction: column;
-	justify-content: stretch;
 	box-shadow: 0px 0px 12px 2px #00000045;
-	
 }
 .image_info /*regroupe imageaside et infohotelaside*/
 {
@@ -358,7 +347,6 @@ aside
 	border-top-left-radius: 10px;
 	border-bottom-left-radius: 10px;
 	object-fit: cover;
-
 }
 .infohotelaside
 {
@@ -377,8 +365,8 @@ aside
 /*Troisième section activités à Marseille*/
 
 
-#all_activity{
-
+#all_activity
+{
 	display:flex;
 	justify-content: space-between;
 	width: 100%;
@@ -530,7 +518,6 @@ h5
 }
 footer ul 
 {
-
 	list-style-type: none;
 	margin-right:135px;
 
